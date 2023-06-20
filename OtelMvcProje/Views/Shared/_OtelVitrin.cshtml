@@ -1,0 +1,179 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Hotel Yalvaç</title>
+
+    <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/Content/Site/css/site-style.css">
+</head>
+<body>
+
+    <header class="w3l-header-nav">
+
+        <nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="~/Content/Site/images/hotels.png" alt="Logo" style="height:35px;" /> Hotel Yalvaç
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item home_active">
+                            <a class="nav-link" href="/AnaSayfa/Index">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item about_active">
+                            <a class="nav-link" href="">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item services_active">
+                            <a class="nav-link" href="">Hizmetlerimiz</a>
+                        </li>
+                        <li class="nav-item contact_active">
+                            <a class="nav-link" href="">İletişim</a>
+                        </li>
+                        <li class="nav-item contact_active">
+                            <a class="nav-link" href="">Giriş Yap</a>
+                        </li>
+                    </ul>
+                    <a href="" class="ml-3 book btn btn-secondary btn-style">Rezervasyon Yap</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    @RenderBody()
+
+ 
+
+    <script src="~/Content/Site/js/jquery-3.3.1.min.js"></script>
+
+    <script src="~/Content/Site/js/owl.carousel.js"></script>
+
+    <script>
+$(document).ready(function () {
+    $('.owl-one').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })</script>
+
+    <script>
+$(document).ready(function () {
+    $('.owl-testimonial').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })</script>
+
+    <script src="~/Content/Site/js/jquery.magnific-popup.min.js"></script>
+    <script>
+$(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });</script>
+
+
+    <script>
+$(function () {
+  $('.navbar-toggler').click(function () {
+    $('body').toggleClass('noscroll');
+  })
+});</script>
+
+    <script src="~/Content/Site/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
