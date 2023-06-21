@@ -129,6 +129,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AnaSayfaController.cs" />
+    <Compile Include="Controllers\FooterController.cs" />
     <Compile Include="Controllers\HizmetlerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -251,6 +252,8 @@
     <Content Include="Views\AnaSayfa\Index.cshtml" />
     <Content Include="Views\Shared\_OtelVitrin.cshtml" />
     <Content Include="Views\Hizmetler\Index.cshtml" />
+    <Content Include="Views\Footer\PartialFooter.cshtml" />
+    <Content Include="Views\Footer\PartialSosyalMedya.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
