@@ -9837,7 +9837,7 @@ h3.title-big {
   -ms-transition: 0.3s ease-in; }
 
 .w3l-main-slider .banner-view {
-  background: url(../images/slide1.jpg) no-repeat center;
+  background: url(../images/slayt1.jpg) no-repeat center;
   background-size: cover;
   min-height: 700px;
   position: relative;
@@ -9846,15 +9846,15 @@ h3.title-big {
   align-items: center; }
 
 .w3l-main-slider .banner-top1 {
-  background: url(../images/slide2.jpg) no-repeat center;
+  background: url(../images/slayt2.jpg) no-repeat center;
   background-size: cover; }
 
 .w3l-main-slider .banner-top2 {
-  background: url(../images/slide3.jpg) no-repeat center;
+  background: url(../images/slayt3.jpg) no-repeat center;
   background-size: cover; }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/slide4.jpg) no-repeat center;
+  background: url(../images/slayt4.jpg) no-repeat center;
   background-size: cover; }
 
 .w3l-main-slider .banner-view:before {
@@ -10190,10 +10190,10 @@ button.owl-next {
   border: 1px solid rgba(10, 49, 68, 0.2); }
 
 .w3l-availability-form .book-form select {
-  background: #fff url(../images/down.png) no-repeat 96% 52%; }
+  background: #fff url(../images/asagi.png) no-repeat 96% 52%; }
 
 .w3l-availability-form input[type="date"] {
-  background: #fff url(../images/calendar.png) no-repeat 96% 50%; }
+  background: #fff url(../images/takvim.png) no-repeat 96% 50%; }
 
 .w3l-availability-form .book-form label {
   font-weight: 600;
@@ -10908,7 +10908,7 @@ div#small-dialog iframe {
 
 /* quotation */
 .quotation {
-  background: url(../images/bg.jpg) no-repeat top;
+  background: url(../images/arkaplan.jpg) no-repeat top;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -11222,7 +11222,7 @@ div#small-dialog iframe {
 
 .w3-about-2 .w3-services-ab {
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), black), url(../images/slide1.jpg);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), black), url(../images/slayt1.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat; }
 
 .w3-about-2 .fea-gd-vv h5 {
