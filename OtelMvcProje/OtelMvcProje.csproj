@@ -132,6 +132,7 @@
     <Compile Include="Controllers\FooterController.cs" />
     <Compile Include="Controllers\HakkimizdaController.cs" />
     <Compile Include="Controllers\HizmetlerController.cs" />
+    <Compile Include="Controllers\IletisimController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -154,6 +155,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entity\Tbliletisim.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entity\TblMesaj.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -180,6 +184,9 @@
     <Content Include="Content\Site\images\alt.jpg" />
     <Content Include="Content\Site\images\arkaplan.jpg" />
     <Content Include="Content\Site\images\banyo.jpg" />
+    <Content Include="Content\Site\images\hakkimda1.jpg" />
+    <Content Include="Content\Site\images\hakkimda2.jpg" />
+    <Content Include="Content\Site\images\hakkimda3.jpg" />
     <Content Include="Content\Site\images\hotels.png" />
     <Content Include="Content\Site\images\oda1.jpg" />
     <Content Include="Content\Site\images\oda2.jpg" />
@@ -256,6 +263,8 @@
     <Content Include="Views\Footer\PartialFooter.cshtml" />
     <Content Include="Views\Footer\PartialSosyalMedya.cshtml" />
     <Content Include="Views\Hakkimizda\Index.cshtml" />
+    <Content Include="Views\Iletisim\Index.cshtml" />
+    <Content Include="Views\Iletisim\MesajGonder.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

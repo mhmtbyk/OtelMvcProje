@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DbOtelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DbOtelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="TblHakkimda">
           <Key>
             <PropertyRef Name="ID" />
@@ -26,12 +26,22 @@
           <Property Name="Mail" Type="nvarchar" MaxLength="50" />
           <Property Name="Adres" Type="nvarchar" MaxLength="250" />
         </EntityType>
+        <EntityType Name="TblMesaj">
+          <Key>
+            <PropertyRef Name="MesajID" />
+          </Key>
+          <Property Name="MesajID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Gonderen" Type="nvarchar" MaxLength="50" />
+          <Property Name="Mail" Type="nvarchar" MaxLength="50" />
+          <Property Name="Konu" Type="nvarchar" MaxLength="100" />
+          <Property Name="Mesaj" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
         <EntityContainer Name="DbOtelModelStoreContainer">
           <EntitySet Name="TblHakkimda" EntityType="Self.TblHakkimda" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbliletisim" EntityType="Self.Tbliletisim" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblMesaj" EntityType="Self.TblMesaj" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbOtelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -59,7 +69,18 @@
         <EntityContainer Name="DbOtelEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="TblHakkimda" EntityType="Self.TblHakkimda" />
           <EntitySet Name="Tbliletisim" EntityType="Self.Tbliletisim" />
+          <EntitySet Name="TblMesaj" EntityType="DbOtelModel.TblMesaj" />
         </EntityContainer>
+        <EntityType Name="TblMesaj">
+          <Key>
+            <PropertyRef Name="MesajID" />
+          </Key>
+          <Property Name="MesajID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Gonderen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Konu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Mesaj" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -86,6 +107,17 @@
                 <ScalarProperty Name="Telefon" ColumnName="Telefon" />
                 <ScalarProperty Name="Mail" ColumnName="Mail" />
                 <ScalarProperty Name="Adres" ColumnName="Adres" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblMesaj">
+            <EntityTypeMapping TypeName="DbOtelModel.TblMesaj">
+              <MappingFragment StoreEntitySet="TblMesaj">
+                <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+                <ScalarProperty Name="Konu" ColumnName="Konu" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+                <ScalarProperty Name="Gonderen" ColumnName="Gonderen" />
+                <ScalarProperty Name="MesajID" ColumnName="MesajID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
