@@ -8,6 +8,7 @@
         <EntityTypeShape EntityType="DbOtelModel.TblHakkimda" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbOtelModel.Tbliletisim" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbOtelModel.TblMesaj" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DbOtelModel.TblYeniKayit" Width="1.5" PointX="3.375" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

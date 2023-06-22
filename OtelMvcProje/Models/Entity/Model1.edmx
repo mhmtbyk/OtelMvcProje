@@ -36,10 +36,21 @@
           <Property Name="Konu" Type="nvarchar" MaxLength="100" />
           <Property Name="Mesaj" Type="nvarchar" MaxLength="1000" />
         </EntityType>
+        <EntityType Name="TblYeniKayit">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdSoyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="Mail" Type="nvarchar" MaxLength="50" />
+          <Property Name="Telefon" Type="nvarchar" MaxLength="20" />
+          <Property Name="Sifre" Type="nvarchar" MaxLength="20" />
+        </EntityType>
         <EntityContainer Name="DbOtelModelStoreContainer">
           <EntitySet Name="TblHakkimda" EntityType="Self.TblHakkimda" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbliletisim" EntityType="Self.Tbliletisim" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblMesaj" EntityType="Self.TblMesaj" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblYeniKayit" EntityType="Self.TblYeniKayit" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -70,6 +81,7 @@
           <EntitySet Name="TblHakkimda" EntityType="Self.TblHakkimda" />
           <EntitySet Name="Tbliletisim" EntityType="Self.Tbliletisim" />
           <EntitySet Name="TblMesaj" EntityType="DbOtelModel.TblMesaj" />
+          <EntitySet Name="TblYeniKayit" EntityType="DbOtelModel.TblYeniKayit" />
         </EntityContainer>
         <EntityType Name="TblMesaj">
           <Key>
@@ -80,6 +92,16 @@
           <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Konu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Mesaj" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblYeniKayit">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Sifre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -118,6 +140,17 @@
                 <ScalarProperty Name="Mail" ColumnName="Mail" />
                 <ScalarProperty Name="Gonderen" ColumnName="Gonderen" />
                 <ScalarProperty Name="MesajID" ColumnName="MesajID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblYeniKayit">
+            <EntityTypeMapping TypeName="DbOtelModel.TblYeniKayit">
+              <MappingFragment StoreEntitySet="TblYeniKayit">
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

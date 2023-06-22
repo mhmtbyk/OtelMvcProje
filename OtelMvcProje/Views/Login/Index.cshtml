@@ -1,0 +1,58 @@
+﻿@model OtelMvcProje.Models.Entity.TblYeniKayit
+@{
+    Layout = null;
+}
+
+<html lang="tr">
+
+<head>
+    <title>Otel Giriş Formu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Particles Login Form Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="~/Content/Login/css/style.css" rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="w3ls-pos">
+        <h1>Otel Misafir Giriş Sayfası</h1>
+        <h2 style="color:white">Rezervasyon Yapabilmek İçin Giriş Yapmanız Gerekmektedir!</h2>
+        <div class="w3ls-login box">
+            <form method="post">
+                <div class="agile-field-txt">
+                    <input type="email" name="Mail" placeholder="info@gmail.com" required="" />
+                </div>
+                <div class="agile-field-txt">
+                    <input type="password" name="Sifre" placeholder="******" required="" />
+                    <div class="agile_label">
+                        <a href="/Kayit/Index/" style="color:white">Bir hesabın yok mu?</a>
+                        <br />
+                    </div>
+                </div>
+                <div class="w3ls-bot">
+                    <input type="submit" value="Giriş Yap">
+                </div>
+            </form>
+        </div>
+        <div class="copy-wthree">
+            <p>
+                © 2021 Particles Login Form. Tüm hakları saklıdır 
+            </p>
+        </div>
+    </div>
+    <script src='~/Content/Login/js/particles.min.js'></script>
+    <script src="~/Content/Login/js/index.js"></script>
+</body>
+
+</html>
