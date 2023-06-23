@@ -136,6 +136,7 @@
     <Compile Include="Controllers\KayitController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MisafirController.cs" />
+    <Compile Include="Controllers\RezervasyonController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -161,6 +162,15 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entity\TblMesaj.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entity\TblMesaj2.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entity\TblMisafir.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entity\TblRezervasyon.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entity\TblYeniKayit.cs">
@@ -197,6 +207,17 @@
     <Content Include="Content\MisafirPanel\css\1.png" />
     <Content Include="Content\MisafirPanel\css\styles.css" />
     <Content Include="Content\MisafirPanel\js\scripts.js" />
+    <Content Include="Content\Rezervasyon\css\bootstrap.css" />
+    <Content Include="Content\Rezervasyon\css\jquery-ui.css" />
+    <Content Include="Content\Rezervasyon\css\style.css" />
+    <Content Include="Content\Rezervasyon\images\arrow.png" />
+    <Content Include="Content\Rezervasyon\images\date-icon.png" />
+    <Content Include="Content\Rezervasyon\images\terrace.jpg" />
+    <Content Include="Content\Rezervasyon\js\easing.js" />
+    <Content Include="Content\Rezervasyon\js\jquery-ui.js" />
+    <Content Include="Content\Rezervasyon\js\jquery.flexslider.js" />
+    <Content Include="Content\Rezervasyon\js\jquery.min.js" />
+    <Content Include="Content\Rezervasyon\js\move-top.js" />
     <Content Include="Content\Site\css\site-style.css" />
     <Content Include="Content\Site\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\Site\images\alt.jpg" />
@@ -292,6 +313,10 @@
     <Content Include="Views\Kayit\Index.cshtml" />
     <Content Include="Views\Shared\_MisafirLayout.cshtml" />
     <Content Include="Views\Misafir\Index.cshtml" />
+    <Content Include="Views\Rezervasyon\Index.cshtml" />
+    <Content Include="Views\Misafir\Rezervasyonlarim.cshtml" />
+    <Content Include="Views\Misafir\GelenMesajlar.cshtml" />
+    <Content Include="Views\Misafir\GidenMesajlar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
