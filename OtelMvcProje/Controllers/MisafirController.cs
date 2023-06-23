@@ -23,9 +23,7 @@ namespace OtelMvcProje.Controllers
         public ActionResult Rezervasyonlarim()
         {
             var misafirmail = (string)Session["Mail"];
-            var misafirid = db.TblYeniKayit.Where(x => x.Mail == misafirmail).Select(x => x.ID).FirstOrDefault();
-            ViewBag.a = misafirid;
-            var degerler = db.TblRezervasyon.Where(x => x.Misafir == misafirid).ToList();
+            var degerler = db.TblOnRezervasyon.Where(x => x.Mail == misafirmail).ToList();
             return View(degerler);
         }
         public ActionResult MisafirBilgiGuncelle(TblYeniKayit p)
