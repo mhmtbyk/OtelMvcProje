@@ -22,7 +22,6 @@
                 <div class="row about-text">
                     <div class="col-lg-6">
                         <h3 class="title-big"> @x.Hakkimda1</h3>
-
                     </div>
                     <div class="col-lg-6">
                         <p>
@@ -40,7 +39,6 @@
                                         <h4>En Ferah Odalar</h4>
                                         <p>Kahvaltı ve Akşam Yemeği</p>
                                     </div>
-
                                 </figcaption>
                             </figure>
                         </div>
@@ -54,7 +52,6 @@
                                         <h4>Spa ve Sauna </h4>
                                         <p>Her Gün Açık </p>
                                     </div>
-
                                 </figcaption>
                             </figure>
                         </div>
@@ -68,7 +65,6 @@
                                         <h4>Hem Ailelere Hem Gençlere</h4>
                                         <p>Özel Odalar</p>
                                     </div>
-
                                 </figcaption>
                             </figure>
                         </div>
@@ -81,7 +77,6 @@
         <div class="w3-services-ab py-5">
             <div class="container py-lg-4 py-md-3">
                 <div class="title-section">
-
                     <div class="title-line">
                     </div>
                 </div>
@@ -97,7 +92,6 @@
                                         <p>
                                             Barımızda saat 10:00-02:00 arasında ücretsiz sınırsız içecek hizmetimizden faydalanabilirsiniz.
                                         </p>
-
                                     </div>
                                 </div>
                             </div>
@@ -132,18 +126,16 @@
                                             Hem yetişkinler hem de çocuklar için sürekli olarak temizlenen hijyenik havuzumuzu dilediğiniz zaman
                                             kullanabilirsiniz.
                                         </p>
-
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    @Html.Action("Ekibimiz","Hakkimizda")
     <section class="w3l-stats">
         <div class="main-w3 py-5">
             <div class="container py-lg-3">
@@ -154,42 +146,13 @@
                             @x.Hakkimda4
                         </p>
                     </div>
-                    <div class="col-lg-6 main-cont-wthree-fea text-center">
-                        <div class="row">
-                            <div class="col-6 pr-2 mt-4">
-                                <div class="grids-speci1">
-                                    <span class="fa fa-users"></span>
-                                    <h3 class="title-spe">1200+</h3>
-                                    <p>Mutlu Ayrılanlar</p>
-                                </div>
-                            </div>
-                            <div class="col-6 pl-2 mt-4">
-                                <div class="grids-speci1">
-                                    <span class="fa fa-camera"></span>
-                                    <h3 class="title-spe">18k+</h3>
-                                    <p>Odalar</p>
-                                </div>
-                            </div>
-                            <div class="col-6 pr-2 mt-4">
-                                <div class="grids-speci1">
-                                    <span class="fa fa-briefcase"></span>
-                                    <h3 class="title-spe">158</h3>
-                                    <p>İş Adamları</p>
-                                </div>
-                            </div>
-                            <div class="col-6 pl-2 mt-4">
-                                <div class="grids-speci1">
-                                    <span class="fa fa-comments"></span>
-                                    <h3 class="title-spe">879+</h3>
-                                    <p>Hizmetler</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @Html.Action("Istatistik","Hakkimizda")
+                    
                 </div>
 
             </div>
         </div>
     </section>
+    @Html.Action("Referans","Hakkimizda")
     
 }

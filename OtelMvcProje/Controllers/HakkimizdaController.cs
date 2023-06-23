@@ -16,5 +16,18 @@ namespace OtelMvcProje.Controllers
             var veriler = db.TblHakkimda.ToList();
             return View(veriler);
         }
+        public PartialViewResult Ekibimiz()
+        {
+            var ekiplistesi = db.TblEkibimiz.ToList();
+            return PartialView(ekiplistesi);
+        }
+        public PartialViewResult Istatistik()
+        {
+            return PartialView();
+        }
+        public PartialViewResult Referans()
+        {
+            return PartialView();
+        }
     }
 }
